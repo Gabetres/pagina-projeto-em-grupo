@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+:root {
+  --body-bg: #f3f3f3;
+  --header-bg: #2B2B2B;
+  --header-color: #ffffff;
+  --body-color: #000000;
+  --box-bg: #ffffff;
+  --box-color: #000000;
+}
+
+.dark-mode:root {
+  --body-bg: #242325;
+  --header-bg: #2b2b2b;
+  --header-color: #ffffff;
+  --body-color: #ffffff;
+  --box-bg: #292929;
+  --box-color: #ffffff;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: 150ms;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  background-color: var(--body-bg);
+  overflow-x: hidden;
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--header-bg);
+  padding: 0.5em;
+  color: var(--header-color);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.header-title {
+  display: inline;
+  color: var(--header-color);
+  position: relative;
+  left: 38px;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+#mode-icon {
+  font-size: 30px;
+  cursor: pointer;
+  position: relative;
+  right: 38px;
+}
+
+
+.container {
+  display: block;
+  max-width: 950px;
+  margin: 4em auto;
+
+}
+
+
+
+
+.main-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--box-bg);
+  color: var(--box-color);
+  border-radius: 25px;
+  padding: 35px;
+
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.main-title {
+  font-weight: 600;
+  font-size: 45pt;
+  line-height: 96px;
+}
+
+.main-text-content {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  width: 100%;
+}
+
+.main-image {
+  display: block;
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  object-position: 0 70%;
+  margin: 0 auto;
+  border-radius: 25px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.article-box {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.article-box-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2em;
+}
+
+.article-text {
+  text-align: center;
+  width: 50%;
+}
+
+
+.container-title {
+  display: block;
+  max-width: 950px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+
+}
+
+.article-title {
+  background-color: var(--box-bg);
+  color: var(--box-color);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  width: 65%;
+  height: 25%;
+  margin: 0 auto;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 18.75pt;
+  padding: 0.65em;
+}
+
+.article-content-text {
+  color: var(--body-color);
+}
+
+.article-box-image {
+  width: 50%;
+  margin-top: 5%;
+}
+
+.article-image {
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.container-back {
+  text-align: center;
+}
+
+a.back {
+  text-align: center;
+  color: var(--body-color);
+  background-color: var(--box-bg);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  padding: 1.5em 2.5em;
+  border-radius: 25px;
+}
+
+a.back:hover {
+  padding: 1.5em 5.5em;
+
+}
+
+
+
+.footer {
+  padding: 0.25em;
+  background-color: var(--header-bg);
+}
+
+.footer-credits {
+  text-align: center;
+  color: var(--header-color);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 36px;
+}
+
+@media only screen and (max-width: 1012px) {
+  .container {
+    max-width: 850px;
+  }
+
+  .article-box-image {
+    width: 50%;
+    margin-top: 5%;
+  }
+
+}
+
+@media only screen and (max-width: 850px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .article-box-image {
+    width: 50%;
+    margin-top: 12%;
+  }
+}
+
+/*Viewport Ipad*/
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 600px;
+
+  }
+
+  .article-box-image {
+    width: 100%;
+    margin-top: 12%;
+  }
+
+  .article-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .article-box-reverse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .article-text {
+    text-align: center;
+    width: 100%;
+  }
+
+}
+
+/*Viewport Small Tablet*/
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 550px;
+  }
+
+  h1.header-title {
+    font-size: 18pt;
+    position: relative;
+    left: 25px;
+  }
+
+  .main-title {
+    font-weight: 600;
+    font-size: 35pt;
+    line-height: 100%;
+  }
+
+  .main-text-content {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+  }
+}
+
+/*Viewport Iphone X*/
+@media only screen and (max-width: 375px) {
+
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  h1.header-title {
+    font-size: 15pt;
+    position: relative;
+    left: 25px;
+  }
+
+  .container {
+    max-width: 300px;
+  }
+
+  .main-title {
+    font-weight: 600;
+    font-size: 15pt;
+    line-height: 50px;
+  }
+
+  .main-text-content {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+  }
+}
+
+/*Viewport Iphone 6/7/8 Plus*/
+@media only screen and (max-width: 414px) {
+
+  .header-title {
+    display: flex;
+    justify-content: center;
+    left: 0;
+  }
+
+  .container {
+    max-width: 360px;
+  }
+
+  .main-title {
+    font-weight: 600;
+    font-size: 35pt;
+  }
+
+  .main-text-content {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: auto;
+    width: 110%;
+  }
+
+}
+
+/*Viewport Iphone 6/7/8*/
+@media only screen and (max-width: 375px) {
+  .container {
+    max-width: 315px;
+  }
+
+  .main-title {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 39px;
+  }
+
+  .main-text-content {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 15x;
+    width: 110%;
+  }
+}
+
+/*Viewport Iphone 5/SE*/
+@media only screen and (max-width: 320px) {
+
+  .header-title {
+    font-size: 20pt;
+  }
+
+  .container {
+    max-width: 275px;
+  }
+
+  .main-title {
+    font-weight: 600;
+    font-size: 27pt;
+    line-height: 1.2em;
+  }
+
+  .main-text-content {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    width: 115%;
+  }
+
+}
